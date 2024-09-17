@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+
+DB_DIR = File.expand_path('~/.toad/db')
+FileUtils.mkdir_p(DB_DIR) unless Dir.exists?(DB_DIR)
+
+require_relative '../lib/scanner'
+
+Scanner::CLI.start(ARGV)
+
