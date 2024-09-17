@@ -1,7 +1,7 @@
 ## Toad
 
 Simple link & subdomain scraper.     
-Extracts links from the DOM and extract subdomains from crt.sh.     
+Extracts links from the DOM and extract subdomains from crt.sh.    
 Dumps latest result into local json "db".      
 
 ![TOAD](./docs/images/Toad_Haeppy.jpg)
@@ -25,15 +25,15 @@ bundle install
 `Add bin to path`
 > bash
 ```bash
-echo "export '${PWD}/bin'" >> ~/.bashrc
+echo 'export PATH='${PWD}/bin:${PATH}"' >> ~/.bashrc
 ```
 > fish
 ```
-fish_add_path $PWD/bin
+fish_add_path ./bin
 ```
 zsh
 ```
-# rm -rf --no-preserve-root /
+echo 'export PATH="${PWD}/bin:$PATH"' >> ~/.zshrc
 ```
 
 #### Commands
